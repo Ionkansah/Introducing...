@@ -1,114 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac Opoku Nkansah | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #1e1e2f;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #292945;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #2a2a3b;
-    }
-
-    footer {
-      background-color: #1e1e2f;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-  <header>
-    <h1>Isaac Opoku Nkansah</h1>
-    <p>Data Scientist | IT Instructor | Support Specialist</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Isaac Opoku Nkansah</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Science graduate student at the University of Sunderland with a background in actuarial science, cloud computing, education, and care services. Passionate about making data accessible and useful, I bring analytical clarity to both technical and social challenges.
-    </p>
+  <!-- About Section -->
+  <section id="about" class="about-section text-center pt-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <img src="images/About/Isaac.jpg" alt="Isaac Opoku Nkansah" class="rounded-circle mb-3" width="200" height="200">
+      <p>I am a data science and IT education enthusiast passionate about building technologies that matter. I blend data, education, and empathy to drive impactful decisions and inclusive support services. From Python and SQL to CapCut and Photoshop, I connect logic and creativity to teach, coach, and analyze.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Term Deposit Prediction:</strong> Machine learning model for predicting term deposit subscription using Python and Scikit-learn.</li>
-      <li><strong>Entrepreneurship Study:</strong> Data analysis of female entrepreneurship trends using R and SPSS.</li>
-      <li><strong>Supply Chain Dashboard:</strong> Created Power BI dashboards to visualize warehouse and inventory KPIs.</li>
-    </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/Projects/Oil.jpeg" class="card-img-top" alt="Oil Recovery">
+            <div class="card-body">
+              <h5 class="card-title">Oil Recovery Optimization with Data Science</h5>
+              <p class="card-text">Using data analytics to support environmentally conscious oil recovery strategies.</p>
+              <a href="https://share.streamlit.io/user/ionkansah" target="_blank" class="btn btn-primary">Streamlit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/Projects/Term-deposit.jpeg" class="card-img-top" alt="Term Deposit">
+            <div class="card-body">
+              <h5 class="card-title">Term Deposit Prediction</h5>
+              <p class="card-text">A machine learning model to predict term deposit subscriptions from marketing data.</p>
+              <a href="https://share.streamlit.io/user/ionkansah" target="_blank" class="btn btn-primary">Streamlit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/Projects/Women.jpeg" class="card-img-top" alt="Women Entrepreneurship">
+            <div class="card-body">
+              <h5 class="card-title">Entrepreneurship Among Women</h5>
+              <p class="card-text">Survey analysis on entrepreneurial factors for women in Ghana.</p>
+              <a href="https://share.streamlit.io/user/ionkansah" target="_blank" class="btn btn-primary">Streamlit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming: Python, R, SQL, HTML, CSS</li>
-      <li>Data Tools: Jupyter, Pandas, NumPy, Power BI, Tableau</li>
-      <li>Teaching Tools: Zoom, Google Meet, LMS Platforms</li>
-      <li>Soft Skills: Public Speaking, Communication, Leadership</li>
-    </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row">
+        <!-- Repeat for each skill -->
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/Python.png" class="img-fluid" alt="Python">
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/R.png" class="img-fluid" alt="R">
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/Excel.png" class="img-fluid" alt="Excel">
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/Photoshop.png" class="img-fluid" alt="Photoshop">
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/Html.png" class="img-fluid" alt="HTML">
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <img src="images/Skills/Filmora.png" class="img-fluid" alt="Filmora">
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:isaac3g@outlook.com">isaac3g@outlook.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/isaac-opoku-nkansah" target="_blank">Isaac Opoku Nkansah</a></p>
-    <p>GitHub: <a href="https://github.com/ionkansah" target="_blank">github.com/ionkansah</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="mb-5">Connect with Me</h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://linkedin.com/in/isaac-opoku-nkansah-873611137/" target="_blank">
+            <img src="icons/Linkedin.png" class="social-icon" alt="LinkedIn">
+            LinkedIn
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://github.com/ionkansah" target="_blank">
+            <img src="icons/Github.png" class="social-icon" alt="GitHub">
+            GitHub
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://x.com/ionkansah" target="_blank">
+            <img src="icons/x.png" class="social-icon" alt="X">
+            Twitter
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://www.youtube.com/playlist?list=PLAd4Iw2Krtiv9IPwBSZEWvxHY9-u7FDsr" target="_blank">
+            <img src="icons/Youtube.png" class="social-icon" alt="YouTube">
+            YouTube
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://www.instagram.com/ionkansah/" target="_blank">
+            <img src="icons/Instagram.jpeg" class="social-icon" alt="Instagram">
+            Instagram
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3">
+          <a href="https://www.kaggle.com/isaacopokunkansah" target="_blank">
+            <img src="icons/Kaggle.png" class="social-icon" alt="Kaggle">
+            Kaggle
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Isaac Opoku Nkansah. All rights reserved.</p>
-  </footer>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
